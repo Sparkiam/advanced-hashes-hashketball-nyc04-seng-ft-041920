@@ -311,7 +311,8 @@ end
 
 
 
-#Build a method, player_stats, that takes in an argument of a player's name and returns a hash of that player's stats.
+#Build a method, player_stats, that takes in an argument of a player's name 
+# and returns a hash of that player's stats.
 
 def player_stats(name)
   oscar = {}
@@ -325,20 +326,22 @@ def player_stats(name)
   return oscar
 end
 
-#Then, return that player's number of rebounds. Remember to think about return values here.
+#Then, return that player's number of rebounds. 
+# Remember to think about return values here.
 
 
 
 def big_shoe_rebounds
-  shoe_size = 0
-  rodman = 0
+  plum = 0
+  shoe = 0
+  
   game_hash.each do |k,v|
     v[:players].each do |k|
-      if shoe_size < k[:shoe]
-        shoe_size = k[:shoe]
-        rodman = k[:rebounds]
+      if shoe < k[:shoe]
+        shoe = k[:shoe]
+        plum = k[:rebounds]
       end
     end
   end
-  return rodman
+  return plum
 end
