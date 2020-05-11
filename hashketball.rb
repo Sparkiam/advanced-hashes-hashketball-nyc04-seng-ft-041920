@@ -311,7 +311,8 @@ end
 
 
 
-#Build a method, player_stats, that takes in an argument of a player's name and returns a hash of that player's stats.
+#Build a method, player_stats, that takes in an argument of a player's name 
+# and returns a hash of that player's stats.
 
 def player_stats(name)
   oscar = {}
